@@ -111,10 +111,21 @@ Using /".+?"/ will return "like" and "fun".
 
 ### Boundaries
 
+Boundaries can be used to very easily select whole words. These are anchors in a way, as well.
+
+- \w allows you to perform whole word matching. It will just select every word in the string by default.
+
+
 ### Back-references
+
+Back-references refer to a section previous to a matched section of a string.
+
+- back-references are specified with a backslash and a digit. '\1'. 
 
 ### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Written by Ben Laubach, studying full stack web development in the University of Washington.
+
+Github: [blaubachs](https://github.com/blaubachs)
