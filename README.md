@@ -123,7 +123,23 @@ Back-references refer to a section previous to a matched section of a string.
 - back-references are specified with a backslash and a digit. '\1'. 
 
 ### Look-ahead and Look-behind
+Look-ahead:
 
+The syntax for look-ahead is "a(?=b)". This means "look for a, but match it only if it is *followed by* b". 
+
+Example string:
+"3 pieces of cheese cost $40."
+
+If I only wanted to return 40, I could write an expression like "/\d+(?=/.)/". This will search for any number, and then, it looks for anything followed by a ".". This will return 40.
+
+Look-behind:
+
+The syntax for look-behind is "(?<=b)a". This is very similar to look-ahead, but it looks for something to match before a.
+
+Example string:
+"3 pieces of cheese cost $40."
+
+If I wanted to return 40, I could write an expression like "/(?<=$)\d+/". This will look for any numbers after $. In our case, it will return 40.
 ## Author
 
 Written by Ben Laubach, studying full stack web development in the University of Washington.
