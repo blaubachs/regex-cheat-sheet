@@ -4,7 +4,7 @@ This gist is a quick tutorial/cheat sheet for regex, otherwise known as regular 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This gist is a quick sheet to look at to help along with learning regex, and using it in JavaScript.
 
 ## Table of Contents
 
@@ -37,10 +37,10 @@ Regex anchors do not consume characters. The purpose of these are to assert matc
 
 In regex, there are several different types of quantifiers.
 
-- ? is used for zero or one.
-- * is used for zero or more.
-- + is used for one or more.
-- {m} is used for m times.
+- "?" is used for zero or one.
+- "*" is used for zero or more.
+- "+" is used for one or more.
+- "{m}" is used for m times.
 
 ### OR Operator
 
